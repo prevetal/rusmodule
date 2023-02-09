@@ -1,0 +1,391 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 312px;
+        --font_size_title: 32px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        display: none !important;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-bottom: 40px;
+        margin-left: 0;
+
+        justify-content: space-between;
+    }
+
+
+    .tabs button
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        margin-bottom: 40px;
+    }
+
+
+    header .catalog
+    {
+        width: 272px;
+    }
+
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 32px;
+    }
+
+
+    header .catalog .mini_modal a
+    {
+        font-size: 15px;
+    }
+
+
+    header .mob_search
+    {
+        width: calc(100% - 243px);
+    }
+
+
+    header .search
+    {
+        width: calc(100% - 280px);
+    }
+
+    header .search .tip
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    .filter
+    {
+        padding: 24px 20px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 46px;
+    }
+
+
+    .page_title
+    {
+        font-size: 62px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .narrowly
+    {
+        width: 878px;
+    }
+
+
+    .text_block * + h2
+    {
+        margin-top: 64px;
+    }
+
+
+    .text_block .gallery .grid .item
+    {
+        height: 233px;
+    }
+
+    .text_block .gallery .grid .item.first
+    {
+        height: 476px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .categories
+    {
+        width: 300px;
+    }
+
+
+    .first_section .data
+    {
+        width: calc(100% - 300px);
+        padding: 64px 0 64px 88px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories a
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        padding: 20px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images a
+    {
+        height: 381px;
+    }
+
+
+    .product_info .data
+    {
+        width: calc(100% - 381px);
+    }
+
+
+    .product_info .product_tabs
+    {
+        margin-top: 40px;
+    }
+
+
+    .product_info .features
+    {
+        width: calc(100% - 400px);
+    }
+
+
+    .product_info .files
+    {
+        width: 340px;
+    }
+
+
+    .product_info .description
+    {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .contacts_info .map
+    {
+        height: 439px;
+    }
+
+
+    .contacts_info .requisites
+    {
+        width: calc(50% - 10px);
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles.top_line:before
+    {
+        display: none;
+    }
+
+
+    .articles .main
+    {
+        width: 332px;
+    }
+
+    .articles .latest
+    {
+        width: calc(100% - 332px);
+    }
+
+
+
+    .articles .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .articles .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .articles .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .row > *
+    {
+        display: inline-block;
+
+        width: 305px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .articles .row > * + *
+    {
+        margin-left: -6px;
+    }
+
+
+
+    /*---------------
+        Subscribe
+    ---------------*/
+    .subscribe .data
+    {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+
+    .subscribe .title
+    {
+        font-size: 28px;
+        line-height: calc(100% + 6px);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .swiper-slide
+    {
+        width: 244px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-left: -20px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-left: 20px;
+    }
+
+
+    .advantages .item
+    {
+        font-size: 14px;
+        line-height: calc(100% + 8px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo img
+    {
+        height: 48px;
+    }
+
+
+    footer .callback
+    {
+        width: 256px;
+    }
+}

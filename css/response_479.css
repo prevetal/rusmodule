@@ -1,0 +1,160 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 16px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 24px;
+        right: 24px;
+
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        width: calc(100% + 32px);
+        margin: 0 -16px 27px;
+        padding: 0 16px 5px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .mob_menu_btn
+    {
+        right: 16px;
+    }
+
+
+    header .mob_search
+    {
+        padding-right: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+    }
+
+
+    header .mob_categories .categories
+    {
+        left: -16px;
+    }
+
+
+
+    /*---------------
+        Mob. menu
+    ---------------*/
+    .mob_menu .scroll
+    {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    .filter .carousel__button.is-close
+    {
+        top: 20px;
+        right: 20px;
+
+        width: 29px;
+        height: 29px;
+    }
+
+    .filter .carousel__button.is-close svg
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .gallery .grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text_block .gallery .grid .item
+    {
+        height: 120px;
+    }
+
+    .text_block .gallery .grid .item.first
+    {
+        height: 248px;
+    }
+
+
+    .text_block .gallery .grid .item.last
+    {
+        grid-column: 1 / 3;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .data .bg
+    {
+        left: -16px;
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories a
+    {
+        padding: 16px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 24px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

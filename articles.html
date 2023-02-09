@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#293278">
+		<meta name="theme-color" content="#293278">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row big_w">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<nav class="menu row">
+							<div class="menu_item">
+								<a href="/">Каталог</a>
+							</div>
+
+							<div class="menu_item">
+								<a href="/">Главная</a>
+							</div>
+
+							<div class="menu_item">
+								<a href="/">О компании</a>
+							</div>
+
+							<div class="menu_item">
+								<a class="active">Новости</a>
+							</div>
+
+							<div class="menu_item">
+								<a href="/">Контакты</a>
+							</div>
+						</nav>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+73832547484">+7 (383) 254-74-84</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:mail@rusmod.ru">mail@rusmod.ru</a>
+							</div>
+						</div>
+
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
+					</div>
+
+					<div class="line"></div>
+
+					<div class="cont row big_w">
+						<div class="mob_categories modal_cont">
+							<button class="btn mini_modal_btn" data-modal-id="#categories_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_catalog"></use></svg>
+								<span>Продукция</span>
+								<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</button>
+
+							<div class="mini_modal categories" id="categories_modal">
+								<div><a href="/">
+									<div class="thumb">
+										<img data-src="images/tmp/category_thumb1.png" alt="" class="lazyload">
+									</div>
+
+									<div>SFP+</div>
+
+									<div class="arr">
+										<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+								</a></div>
+
+								<div><a href="/">
+									<div class="thumb">
+										<img data-src="images/tmp/category_thumb1.png" alt="" class="lazyload">
+									</div>
+
+									<div>QSFP+ |40G|</div>
+
+									<div class="arr">
+										<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+								</a></div>
+
+								<div><a href="/">
+									<div class="thumb">
+										<img data-src="images/tmp/category_thumb1.png" alt="" class="lazyload">
+									</div>
+
+									<div>DICRECT ATTACH CABLE (DAC)</div>
+
+									<div class="arr">
+										<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+								</a></div>
+
+								<div><a href="/">
+									<div class="thumb">
+										<img data-src="images/tmp/category_thumb1.png" alt="" class="lazyload">
+									</div>
+
+									<div>QSFP28 |100G|</div>
+
+									<div class="arr">
+										<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+								</a></div>
+
+								<div><a href="/">
+									<div class="thumb">
+										<img data-src="images/tmp/category_thumb1.png" alt="" class="lazyload">
+									</div>
+
+									<div>SFP</div>
+
+									<div class="arr">
+										<svg><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+								</a></div>
+							</div>
+						</div>
+
+						<button class="mob_search_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
+
+						<div class="mob_search">
+							<div class="title">Найти</div>
+
+							<div class="catalog modal_cont">
+								<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+									<span>Продукция</span>
+									<span>Все категории</span>
+									<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+								</button>
+
+								<div class="mini_modal" id="catalog_modal">
+									<div><a href="/">
+										<span>SFP+</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										<span>SFP+ |10G| 1 водлокно</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										<span>SFP+ |10G| 2 водлокна</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<span>QSFP+ |40G|</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<span>DICRECT ATTACH CABLE  (DAC)</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<span>QSFP28 |100G|</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<span>SFP</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										<span>SFP |1G| 1 водлокно</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										<span>SFP |155М|</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										<span>Медные SFP</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+
+									<div><a href="/">
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_hor"></use></svg>
+										<span>Медные SFP</span>
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</a></div>
+								</div>
+							</div>
+
+							<div class="search">
+								<form action="">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+
+									<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+									<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+
+									<div class="tips">
+										<a href="/" class="tip">
+											<span>SFP+ модуль, 10G, WDM, TX 1330нм, RX 1270нм, 10 км, LC, RSM10W42L10</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+										</a>
+
+										<a href="/" class="tip">
+											<span>SFP модуль, 155Мбит/с, WDM, TX 1550 нм, RX 1310 нм, 20 км, SC, RSM155W63L20</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+										</a>
+
+										<a href="/" class="tip">
+											<span>SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1310 нм, 40 км, LC, RSM1W63L40</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+										</a>
+
+										<a href="/" class="tip">
+											<span>SFP модуль, 1.25G, WDM, TX 1550 нм, RX 1490 нм, 80 км, SC, RSM1W65S80</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+										</a>
+
+										<a href="/" class="tip">
+											<span>SFP модуль, 155Мбит/с, WDM, TX 1550 нм, RX 1310 нм, 20 км, SC, RSM155W63L20</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+										</a>
+
+										<a href="/" class="tip">
+											<span>SFP модуль, 155Мбит/с, WDM, TX 1550 нм, RX 1310 нм, 20 км, SC, RSM155W63L20</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+										</a>
+
+										<a href="/" class="tip">
+											<span>SFP модуль, 155Мбит/с, WDM, TX 1550 нм, RX 1310 нм, 20 км, SC, RSM155W63L20</span>
+											<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+										</a>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<button class="get_prices_btn modal_btn" data-modal="#get_prices_modal">Запросить прайс-лист</button>
+					</div>
+				</header>
+
+
+				<section class="mob_menu">
+					<div class="scroll">
+						<div class="menu">
+							<div class="menu_item">
+								<a href="/">Каталог</a>
+							</div>
+
+							<div class="menu_item">
+								<a href="/">Главная</a>
+							</div>
+
+							<div class="menu_item">
+								<a class="active">О компании</a>
+							</div>
+
+							<div class="menu_item">
+								<a href="/">Новости</a>
+							</div>
+
+							<div class="menu_item">
+								<a href="/">Контакты</a>
+							</div>
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+73832547484">+7 (383) 254-74-84</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:mail@rusmod.ru">mail@rusmod.ru</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont big_w">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a>
+							<svg class="sep"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+
+							<span class="current">Новости</span>
+						</div>
+
+						<h1 class="page_title">Новости</h1>
+					</div>
+				</section>
+
+
+				<section class="articles block mob_no_m">
+					<div class="cont big_w">
+						<div class="data">
+							<div class="main">
+								<div class="title">Главные новости</div>
+
+								<div class="list">
+									<div class="article">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/article_thumb.jpg" alt="" class="lazyload">
+										</a>
+
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+
+									<div class="article">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/article_thumb.jpg" alt="" class="lazyload">
+										</a>
+
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="latest">
+								<div class="title">Последние обновления</div>
+
+								<div class="columns">
+									<div class="article">
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+
+									<div class="article">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/article_thumb.jpg" alt="" class="lazyload">
+										</a>
+
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+
+									<div class="article">
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+
+									<div class="article">
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+
+									<div class="article">
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+
+									<div class="article">
+										<a href="/" class="thumb">
+											<img data-src="images/tmp/article_thumb.jpg" alt="" class="lazyload">
+										</a>
+
+										<div class="date">21 октября 2022</div>
+
+										<div class="name">
+											<a href="/">Второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км</a>
+										</div>
+
+										<div class="desc">Русмодуль запустил в производство второй релиз печатных плат для оптических трансиверов со скоростью передачи 1,25 Гбит\с и дальностью до 40 км. Модули в наличии. Ждём ваших заказов!</div>
+
+										<div class="models">
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+											<div><a href="/">RSM1W36S40,</a></div>
+										</div>
+
+										<div class="link">
+											<a href="/">Читать далее...</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagination mob_hide">
+							<div class="links">
+								<a href="/" class="prev">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+								</a>
+
+								<a class="active">1</a>
+								<a href="/">2</a>
+								<a href="/">3</a>
+								<a href="/">4</a>
+								<a href="/">5</a>
+								<a href="/">6</a>
+								<a href="/">7</a>
+								<a href="/">8</a>
+
+								<a href="/" class="next">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+								</a>
+							</div>
+
+							<div class="count">Показано 12 — 103</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="subscribe block">
+					<div class="cont big_w">
+						<div class="data">
+							<div class="title">Подпишитесь на наши обновления</div>
+
+							<button class="btn">Подписаться</button>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont row big_w">
+					<div class="logo">
+						<img src="images/logo_white.svg" alt="">
+					</div>
+
+					<div class="contacts">
+						<div class="title">Компания</div>
+
+						<div class="location">Новосибирск, Красный проспект,<br> 163/2 офис 308</div>
+
+						<div class="phone">
+							<a href="tel:+73832547484">+73832547484</a>
+						</div>
+
+						<div class="email">
+							<a href="mailto:mail@rusmod.ru">mail@rusmod.ru</a>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Разделы</div>
+
+						<div class="items">
+							<div><a href="/">Новости</a></div>
+							<div><a href="/">О компании</a></div>
+							<div><a href="/">Контакты</a></div>
+							<div><a href="/">Доставка и оплата</a></div>
+						</div>
+					</div>
+
+					<div class="callback">
+						<div class="title">Обратный звонок</div>
+
+						<div class="desc">Вы можете запросить обратный звонок в любой момент. Для этого воспользуйтесь формой.</div>
+
+						<form action="">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+
+							<input type="tel" name="" value="" class="input" placeholder="+7 (000) 000-00-00">
+
+							<button type="submit" class="submit_btn">
+								<svg><use xlink:href="images/sprite.svg#ic_send_arrow"></use></svg>
+							</button>
+						</form>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="get_prices_modal">
+			<div class="modal_title">Запросить прайс-лист</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="label">Ваша имя</div>
+
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Например, Евгений">
+					</div>
+				</div>
+
+				<div class="line error">
+					<div class="label">Email</div>
+
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Например, exemple@email.com">
+
+						<button type="button" class="clear_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
+					</div>
+
+					<div class="error_text">Некорректный email</div>
+				</div>
+
+				<div class="line">
+					<div class="label">Номер телефона</div>
+
+					<div class="field">
+						<input type="tel" name="" value="" class="input" placeholder="Введите номер телефона">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="label">Название компании</div>
+
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder='Например, ООО "Электросистемы"'>
+					</div>
+				</div>
+
+				<div class="line price_list">
+					<div class="field">
+						<img src="images/ic_xls.svg" alt="">
+						<span>прайс_лист.xls</span>
+					</div>
+				</div>
+
+				<div class="line agree">
+					<label>
+						<input type="checkbox" name="agree" checked>
+
+						<div class="check">
+							<svg><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+						</div>
+
+						<div>Я соглсен(-а) на обработку персональных данных</div>
+					</label>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn" disabled>Запросить</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

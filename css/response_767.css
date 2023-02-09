@@ -1,0 +1,1108 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 24px;
+    }
+
+
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 56px;
+    }
+
+    .block.bg
+    {
+        padding: 32px 0;
+    }
+
+    .block.mob_no_m
+    {
+        margin-bottom: 0;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        width: calc(100% + 48px);
+        margin: 0 -24px 27px;
+        padding: 0 24px 5px;
+    }
+
+
+    .tabs button
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 18px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination.mob_hide
+    {
+        display: none;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 16px;
+    }
+
+
+    .all_link a
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    header .cont ~ .cont
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    header .menu
+    {
+        display: none;
+    }
+
+
+    header .mob_categories
+    {
+        width: calc(100% - 56px);
+    }
+
+
+    header .mob_categories .categories
+    {
+        left: -24px;
+
+        width: 100vw;
+        margin-top: 10px;
+    }
+
+
+    header .mob_categories .btn
+    {
+        width: 100%;
+        height: 48px;
+        padding: 12px 40px 12px 12px;
+
+        justify-content: flex-start;
+    }
+
+    header .mob_categories .btn .icon
+    {
+        display: none;
+    }
+
+    header .mob_categories .btn .icon + .icon,
+    header .mob_categories .btn span,
+    header .mob_categories .btn .arr
+    {
+        display: block;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+    header .catalog
+    {
+        width: 100%;
+    }
+
+
+    header .mob_search_btn
+    {
+        display: flex;
+    }
+
+
+    header .mob_search
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+        padding: 32px 24px 24px;
+
+        border-top: 1px solid #f2f2f1;
+        border-radius: 0 0 12px 12px;
+        background: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, .04);
+    }
+
+    header .mob_search .title
+    {
+        display: block;
+    }
+
+
+    header .search
+    {
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+    .filter
+    {
+        padding: 20px;
+    }
+
+
+    .filter .title
+    {
+        font-size: 24px;
+        line-height: 29px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .filter .carousel__button.is-close
+    {
+        top: 20px;
+        right: 20px;
+
+        width: 29px;
+        height: 29px;
+    }
+
+    .filter .carousel__button.is-close svg
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .filter .form
+    {
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+    .filter .form > *,
+    .filter .form > *.big_w
+    {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+    .filter .form > *.last
+    {
+        order: 0;
+    }
+
+
+    .filter .cols
+    {
+        margin-left: -12px;
+    }
+
+    .filter .cols > *,
+    .filter .cols.mob_big > *
+    {
+        width: calc(50% - 12px);
+        margin-left: 12px;
+    }
+
+
+    .filter .form .btns
+    {
+        padding-top: 8px;
+    }
+
+
+    .filter .form .submit_btn
+    {
+        display: none;
+    }
+
+    .filter .reset_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .page_title
+    {
+        font-size: 40px;
+        line-height: calc(100% + 9px);
+    }
+
+    .page_title.small
+    {
+        font-size: 20px;
+        line-height: calc(100% + 4px);
+    }
+
+    .breadcrumbs + .page_title
+    {
+        margin-top: 8px;
+    }
+
+
+    .page_head .mob_filter_btn
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: -28px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: calc(100% + 5px);
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of4,
+    .form .columns > *.width2of4,
+    .form .columns > *.width3of4
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: calc(100% + 6px);
+    }
+
+
+    .text_block > *,
+    .text_block .narrowly > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 24px;
+        line-height: calc(100% + 5px);
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 56px;
+    }
+
+
+    .text_block .gallery .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .text_block .gallery .row::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .text_block .gallery .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .text_block .gallery .row > *
+    {
+        display: inline-block;
+
+        width: 211px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+    }
+
+    .text_block .gallery .row > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .text_block .gallery .thumb
+    {
+        height: 307px;
+    }
+
+
+    .text_block .steps .grid
+    {
+        display: block;
+    }
+
+
+    .text_block .steps .item + .item
+    {
+        margin-top: 8px;
+    }
+
+    .text_block .steps .thumb,
+    .text_block .steps .thumb.big_h
+    {
+        height: 272px;
+    }
+
+    .text_block .steps .info
+    {
+        font-size: 20px;
+
+        padding: 24px;
+    }
+
+
+    .text_block table
+    {
+        width: 674px;
+    }
+
+
+    .text_block .images .row
+    {
+        margin-left: 0;
+    }
+
+    .text_block .images .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .text_block .figures .row
+    {
+        margin-left: 0;
+    }
+
+    .text_block .figures .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .text_block figure figcaption
+    {
+        font-size: 16px;
+
+        margin-top: 12px;
+    }
+
+
+    .text_block img
+    {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 12px;
+    }
+
+
+    .text_block .gallery .grid
+    {
+        grid-gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .text_block .gallery .grid .item
+    {
+        height: 132px;
+    }
+
+    .text_block .gallery .grid .item.first
+    {
+        height: 272px;
+    }
+
+
+    .text_block .gallery .grid .item.last
+    {
+        grid-row: auto;
+        grid-column: 1 / 4;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 0;
+    }
+
+
+    .first_section .data
+    {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+
+    .first_section .data .title
+    {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+
+    .first_section .data .get_prices_btn
+    {
+        margin-top: 28px;
+        padding: 18px 26px;
+    }
+
+
+    .first_section .data .bg
+    {
+        left: -24px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+    .advantages .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .advantages .row > *:nth-child(3)
+    {
+        order: 0;
+    }
+
+
+    .advantages .item
+    {
+        line-height: calc(100% + 6px);
+
+        padding: 0;
+    }
+
+
+    .advantages .buy
+    {
+        margin-top: 40px;
+    }
+
+    .advantages .buy .title
+    {
+        line-height: calc(100% + 5px);
+    }
+
+    .advantages .buy .get_prices_btn
+    {
+        padding: 20px 24px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .product_info .images a
+    {
+        height: 220px;
+    }
+
+
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+    .product_info .articul
+    {
+        font-size: 16px;
+    }
+
+
+    .product_info .garanti
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .product_info .send_price_list .field
+    {
+        width: 100%;
+    }
+
+    .product_info .send_price_list .input
+    {
+        height: 45px;
+    }
+
+
+    .product_info .send_price_list .submit_btn
+    {
+        width: 100%;
+        height: 47px;
+        margin-top: 8px;
+    }
+
+
+
+    .product_info .description
+    {
+        padding: 24px;
+    }
+
+
+    .product_info .description .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 12px;
+    }
+
+
+
+    .product_info .order_test .title
+    {
+        font-size: 24px;
+        line-height: 29px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .mob_head
+    {
+        margin-bottom: 12px;
+        padding-top: 24px;
+
+        border-top: 1px dashed #d4d6e4;
+    }
+
+
+    .products .mob_head .title
+    {
+        display: none;
+    }
+
+
+    .products .mob_head .mob_filter_btn
+    {
+        width: 100%;
+        margin: 0;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+
+    .products table
+    {
+        display: block;
+        overflow: hidden;
+
+        border: 1px solid #d4d6e4;
+        border-radius: 12px;
+    }
+
+
+    .products thead
+    {
+        display: none;
+    }
+
+
+    .products table tr
+    {
+        display: flex;
+
+        margin-left: -20px;
+        padding: 11px;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .products table tr + tr
+    {
+        border-top: 1px solid #d4d6e4;
+    }
+
+
+    .products table td,
+    .products table td + td
+    {
+        position: relative;
+
+        width: calc(33.333% - 20px);
+        margin-left: 20px;
+        padding: 20px 0 4px;
+
+        border: none;
+    }
+
+    .products table td:before
+    {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 12px;
+
+        position: absolute;
+        top: 4px;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+
+        content: attr(data-column);
+        text-align: left;
+        white-space: nowrap;
+        letter-spacing: -.02em;
+        text-transform: none;
+    }
+
+
+    .products table td.name
+    {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+
+        width: calc(100% - 20px);
+        margin-bottom: 12px;
+        padding: 0;
+    }
+
+
+    .products table td.price
+    {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+
+        width: calc(100% - 20px);
+        margin-top: 12px;
+        padding: 0;
+    }
+
+
+
+    .products .swiper-slide
+    {
+        width: 175px;
+    }
+
+
+    .products .product
+    {
+        padding: 15px 15px 23px;
+    }
+
+
+    .products .product .thumb
+    {
+        height: 96px;
+    }
+
+
+    .products .product .name
+    {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+
+    .products .product .price
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info
+    {
+        margin-bottom: -16px;
+    }
+
+
+    .category_info .thumb
+    {
+        width: 100%;
+        height: 192px;
+        margin-bottom: 24px;
+    }
+
+    .category_info .thumb + *
+    {
+        width: 100%;
+    }
+
+
+    .category_info .category_name
+    {
+        font-size: 40px;
+        line-height: calc(100% + 9px);
+    }
+
+
+    .category_info .desc
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .category_info .modules_btn
+    {
+        width: 100%;
+        padding: 18px;
+
+        text-align: center;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .location,
+    .contacts_info .phone,
+    .contacts_info .email
+    {
+        font-size: 16px;
+        line-height: calc(100% + 4px);
+    }
+
+
+    .contacts_info .feedback_btn
+    {
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+
+    .contacts_info .map
+    {
+        height: 375px;
+    }
+
+
+    .contacts_info .requisites .title
+    {
+        font-size: 24px;
+        line-height: calc(100% + 5px);
+
+        margin-bottom: 20px;
+    }
+
+
+    .contacts_info .requisites .label
+    {
+        width: 100%;
+    }
+
+    .contacts_info .requisites .val
+    {
+        width: 100%;
+        margin-top: 6px;
+    }
+
+
+    .contacts_info .download
+    {
+        margin-top: 24px;
+    }
+
+    .contacts_info .download .link
+    {
+        font-size: 14px;
+        line-height: 17px;
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .main
+    {
+        width: calc(100% + 48px);
+        max-width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+
+        border-radius: 0;
+    }
+
+
+    .articles .main .title,
+    .articles .latest .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .articles .main .list
+    {
+        display: block;
+    }
+
+    .articles .main .list > *
+    {
+        width: 100%;
+    }
+
+    .articles .main .article + .article
+    {
+        border: none;
+        border-top: 1px solid #d4d6e4;
+    }
+
+
+    .articles .latest
+    {
+        width: calc(100% + 48px);
+        max-width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+
+        border: none;
+        border-radius: 0;
+    }
+
+
+    .articles .columns
+    {
+        column-count: 1;
+        column-rule: none;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .articles .article .desc
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    /*---------------
+        Subscribe
+    ---------------*/
+    .subscribe .data
+    {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+
+    .subscribe .btn
+    {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Subscribe
+    ---------------*/
+    .subscribe
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 40px 0;
+    }
+
+
+
+    footer .logo img
+    {
+        height: 40px;
+    }
+
+
+    footer .contacts,
+    footer .links,
+    footer .callback
+    {
+        width: 100%;
+
+        order: 1;
+    }
+
+    footer .links,
+    footer .callback
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
