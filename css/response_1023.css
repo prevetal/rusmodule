@@ -122,14 +122,57 @@
 
     header .mob_search
     {
-        width: calc(100% - 66px);
-        margin-left: auto;
+        width: calc(100% - 128px);
     }
 
 
     header .search
     {
         width: calc(100% - 240px);
+    }
+
+
+
+    header .cart_link
+    {
+        display: flex;
+
+        width: 54px;
+        height: 54px;
+
+        border-radius: 8px;
+        background: #f2f2f1;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    header .cart_link .icon
+    {
+        width: 32px;
+        height: 29px;
+        margin: 0;
+    }
+
+    header .cart_link .icon + *
+    {
+        display: none;
+    }
+
+
+    header .cart_link .icon span
+    {
+        font-size: 14px;
+        line-height: 18px;
+
+        top: -4px;
+        right: -6px;
+
+        width: 18px;
+        height: 18px;
     }
 
 
@@ -431,7 +474,6 @@
         clear: both;
 
         width: 100%;
-        margin-top: 24px;
         padding-bottom: 23px;
     }
 
@@ -597,6 +639,46 @@
 
 
 
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info table td.price
+    {
+        width: 110px;
+        min-width: 110px;
+    }
+
+
+    .cart_info table td.amount
+    {
+        width: 121px;
+        min-width: 121px;
+    }
+
+    .cart_info table td.amount .input
+    {
+        width: 57px;
+    }
+
+
+    .cart_info table td.delete
+    {
+        width: 86px;
+        min-width: 86px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .form
+    {
+        width: 100%;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -625,10 +707,4 @@
 
         order: 3;
     }
-
-
-
-    /*-----------
-        PopUp
-    -----------*/
 }

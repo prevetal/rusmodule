@@ -237,6 +237,59 @@ $(() => {
 	})
 
 
+	// Изменение количества товара
+	const amountMinusBtns = document.querySelectorAll('.amount .minus'),
+		amountPlusBtns = document.querySelectorAll('.amount .plus'),
+		amountInputs = document.querySelectorAll('.amount .input')
+
+	if (amountMinusBtns) {
+		amountMinusBtns.forEach(el => {
+			el.addEventListener('click', e => {
+				e.preventDefault()
+
+				let parent = el.closest('.amount'),
+					input = parent.querySelector('.input'),
+					inputVal = parseFloat(input.value),
+					minimum = parseFloat(input.getAttribute('data-minimum')),
+					step = parseFloat(input.getAttribute('data-step')),
+					unit = input.getAttribute('data-unit')
+
+				if (inputVal > minimum) input.value = inputVal - step + unit
+			})
+		})
+	}
+
+	if (amountPlusBtns) {
+		amountPlusBtns.forEach(el => {
+			el.addEventListener('click', e => {
+				e.preventDefault()
+
+				let parent = el.closest('.amount'),
+					input = parent.querySelector('.input'),
+					inputVal = parseFloat(input.value),
+					maximum = parseFloat(input.getAttribute('data-maximum')),
+					step = parseFloat(input.getAttribute('data-step')),
+					unit = input.getAttribute('data-unit')
+
+				if (inputVal < maximum) input.value = inputVal + step + unit
+			})
+		})
+	}
+
+	if (amountInputs) {
+		amountInputs.forEach(el => {
+			el.addEventListener('keydown', e => {
+				let maximum = parseInt(el.getAttribute('data-maximum'))
+
+				setTimeout(() => {
+					if (el.value == '' || el.value == 0) el.maximum = parseInt(el.getAttribute('data-minimum'))
+					if (el.value > maximum) el.value = maximum
+				})
+			})
+		})
+	}
+
+
 	if (is_touch_device()) {
 		// Закрытие моб. меню свайпом справо на лево
 		let ts

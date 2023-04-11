@@ -7,7 +7,6 @@
     :root
     {
         --font_size: 14px;
-        --font_size_title: 24px;
     }
 
 
@@ -97,6 +96,12 @@
     /*------------
         Header
     ------------*/
+    header
+    {
+        margin-bottom: 28px;
+    }
+
+
     header .cont
     {
         padding-top: 16px;
@@ -118,7 +123,7 @@
 
     header .mob_categories
     {
-        width: calc(100% - 56px);
+        width: calc(100% - 62px);
     }
 
 
@@ -199,6 +204,13 @@
         width: 100%;
         margin-top: 12px;
         margin-left: 0;
+    }
+
+
+
+    header .cart_link
+    {
+        height: 48px;
     }
 
 
@@ -291,9 +303,17 @@
     /*---------------
         Page head
     ---------------*/
-    .page_head
+    .page_head,
+    .page_head.middle_m
     {
         margin-bottom: 40px;
+    }
+
+
+    .breadcrumbs
+    {
+        font-size: 14px;
+        line-height: 17px;
     }
 
 
@@ -305,13 +325,13 @@
 
     .page_title.small
     {
-        font-size: 20px;
+        font-size: 32px;
         line-height: calc(100% + 4px);
     }
 
     .breadcrumbs + .page_title
     {
-        margin-top: 8px;
+        margin-top: 16px;
     }
 
 
@@ -775,9 +795,14 @@
 
         width: calc(33.333% - 20px);
         margin-left: 20px;
-        padding: 20px 0 4px;
+        padding: 20px 0 0;
 
         border: none;
+    }
+
+    .products table td:nth-child(4) ~ td
+    {
+        margin-top: 12px;
     }
 
     .products table td:before
@@ -814,7 +839,7 @@
     }
 
 
-    .products table td.price
+    /* .products table td.price
     {
         font-size: 16px;
         font-weight: 600;
@@ -823,6 +848,32 @@
         width: calc(100% - 20px);
         margin-top: 12px;
         padding: 0;
+    } */
+
+
+    .products table td.buy
+    {
+        padding: 0;
+
+        align-self: center;
+    }
+
+    .products table td.buy .btn
+    {
+        width: 89px;
+        margin: 0;
+
+        border-radius: 6px;
+    }
+
+    .products table td.buy .btn .icon
+    {
+        display: none;
+    }
+
+    .products table td.buy .btn span
+    {
+        display: block;
     }
 
 
@@ -1044,6 +1095,12 @@
     /*---------------
         Subscribe
     ---------------*/
+    .subscribe
+    {
+        display: none;
+    }
+
+
     .subscribe .data
     {
         padding-top: 56px;
@@ -1060,11 +1117,179 @@
 
 
     /*---------------
-        Subscribe
+        Cart info
     ---------------*/
-    .subscribe
+    .cart_info table thead
     {
         display: none;
+    }
+
+
+    .cart_info table tr
+    {
+        position: relative;
+
+        display: flex;
+
+        padding: 11px;
+
+        border: 1px solid #f2f2f1;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .cart_info table tr:nth-child(2n+1)
+    {
+        background: #f2f2f1;
+    }
+
+    .cart_info table tr:first-child
+    {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+
+    .cart_info table td
+    {
+        position: relative;
+
+        display: block;
+
+        padding: 0;
+    }
+
+
+    .cart_info table td.thumb
+    {
+        width: 75px;
+        min-width: 0;
+        margin-right: 18px;
+    }
+
+
+    .cart_info table td.articul
+    {
+        width: calc(100% - 93px);
+        padding-right: 40px;
+
+        align-self: center;
+    }
+
+
+    .cart_info table td.price,
+    .cart_info table td.amount
+    {
+        width: 50%;
+        min-width: 0;
+        margin-top: 12px;
+        padding-top: 20px;
+    }
+
+    .cart_info table td.price:before,
+    .cart_info table td.amount:before
+    {
+        color: #000;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+
+        content: attr(data-column);
+        letter-spacing: -.02em;
+    }
+
+
+    .cart_info table td.amount div
+    {
+        width: 88px;
+    }
+
+    .cart_info table td.amount .input
+    {
+        width: 40px;
+    }
+
+
+    .cart_info table td.price.total
+    {
+        margin-top: 24px;
+        margin-left: auto;
+        padding-top: 0;
+        padding-left: 68px;
+    }
+
+    .cart_info table td.price.total:before
+    {
+        width: auto;
+    }
+
+
+    .cart_info table td.delete
+    {
+        position: absolute;
+        top: 25px;
+        right: 14px;
+
+        width: auto;
+        min-width: 0;
+    }
+
+
+    .cart_info table tr:nth-child(2n) td
+    {
+        background: none;
+    }
+
+
+    .cart_info .cart_total
+    {
+        margin: 0;
+        padding: 18px 11px;
+
+        border: 1px solid #f2f2f1;
+        border-top: none;
+
+        justify-content: flex-start;
+    }
+
+    .cart_info .cart_total .exp
+    {
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .checkout_info .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .checkout_info .form .submit_btn
+    {
+        width: 100%;
     }
 
 

@@ -83,6 +83,11 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 						</button>
+
+						<button class="mob_search_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
 					</div>
 
 					<div class="line"></div>
@@ -158,11 +163,6 @@
 								</a></div>
 							</div>
 						</div>
-
-						<button class="mob_search_btn">
-							<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
-							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
-						</button>
 
 						<div class="mob_search">
 							<div class="title">Найти</div>
@@ -287,6 +287,15 @@
 						</div>
 
 						<button class="get_prices_btn modal_btn" data-modal="#get_prices_modal">Запросить прайс-лист</button>
+
+						<a href="/" class="cart_link">
+							<div class="icon">
+								<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								<span>4</span>
+							</div>
+
+							<div>Корзина</div>
+						</a>
 					</div>
 				</header>
 
@@ -355,13 +364,31 @@
 						</div>
 
 						<div class="data right">
-							<h1 class="product_name">SFP+ модуль, 10G, WDM, TX 1330нм, RX 1270нм, 10 км, LC, RSM10W42L10</h1>
-
-							<div class="articul">Артикул: <span>RSM1W36S40</span></div>
+							<h1 class="product_name">QSFP28 модуль, 100G, 2км, MTP, RSM100M2</h1>
 						</div>
 
 						<div class="data right">
-							<div class="garanti">Гарантия 36 месяцев.</div>
+							<div class="characteristics">
+								<div>
+									<div class="label">Артикул:</div>
+									<div class="val">RSM100L2</div>
+								</div>
+
+								<div>
+									<div class="label">Гарантия:</div>
+									<div class="val">36 месяцев.</div>
+								</div>
+
+								<div>
+									<div class="label">Цена GPL:</div>
+									<div class="val"><b>15 000.00 ₽</b></div>
+								</div>
+							</div>
+
+							<button class="buy_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+								<span>Добавить в корзину</span>
+							</button>
 
 							<div class="send_price_list">
 								<div class="label">Отправить прайс-лист в WhatsApp </div>
@@ -373,7 +400,7 @@
 										<input type="tel" name="" value="" class="input" placeholder="Введите номер телефона">
 									</div>
 
-									<button type="submit" class="submit_btn" disabled>Получить файл</button>
+									<button type="submit" class="submit_btn" disabled>Отправить</button>
 
 									<div class="agree">
 										<label>

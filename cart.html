@@ -338,88 +338,264 @@
 
 
 				<section class="page_head middle_m">
-					<div class="cont">
+					<div class="cont big_w">
 						<div class="breadcrumbs">
 							<a href="/">Главная</a>
 							<svg class="sep"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 
-							<a href="/">Новости</a>
-							<svg class="sep"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
-
-							<span class="current">ООО "НПП РУСМОДУЛЬ" ПОЛУЧИЛО...</span>
+							<span class="current">Корзина</span>
 						</div>
 
-						<h1 class="page_title small">ООО "НПП РУСМОДУЛЬ" получило акт экспертизы о соответствии производимой промышленной продукции требованиям, предъявляемым в целях ее отнесения к продукции, произведённой на территории Российской Федерации</h1>
-
-						<div class="modules">
-							<div><a href="/">SFP модуль RSM1D3L2</a></div>
-							<div><a href="/">SFP модуль RSM1W63S3</a></div>
-							<div><a href="/">SFP модуль RSM1W36S20</a></div>
-							<div><a href="/">SFP модуль RSM1W36L3</a></div>
-							<div><a href="/">SFP модуль RSM1W36L20</a></div>
-							<div><a href="/">SFP модуль RSM1D3L2</a></div>
-							<div><a href="/">SFP модуль RSM1W63S3</a></div>
-							<div><a href="/">SFP модуль RSM1W36S20</a></div>
-							<div><a href="/">SFP модуль RSM1W36L3</a></div>
-							<div><a href="/">SFP модуль RSM1W36L20</a></div>
-						</div>
-
-						<div class="line"></div>
+						<h1 class="page_title small">Ваш заказ</h1>
 					</div>
 				</section>
 
 
-				<section class="article_info block">
-					<div class="cont">
-						<div class="text_block">
-							<div class="gallery">
-								<div class="grid">
-									<a href="images/tmp/gallery_grid_thumb.jpg" class="item fancy_img first">
-										<img data-src="images/tmp/gallery_grid_thumb.jpg" alt="" class="lazyload">
-									</a>
+				<section class="cart_info block">
+					<div class="cont big_w">
+						<table>
+							<thead>
+								<tr>
+									<th>Фото</th>
+									<th>Артикул</th>
+									<th>Цена (₽)</th>
+									<th>Количество</th>
+									<th>Итого (₽)</th>
+									<th></th>
+								</tr>
+							</thead>
 
-									<a href="images/tmp/gallery_grid_thumb2.jpg" class="item fancy_img">
-										<img data-src="images/tmp/gallery_grid_thumb2.jpg" alt="" class="lazyload">
-									</a>
+							<tbody>
+								<tr>
+									<td class="thumb">
+										<a href="/" target="_blank">
+											<img data-src="images/tmp/product_thumb3.png" alt="" class="lazyload">
+										</a>
+									</td>
 
-									<a href="images/tmp/gallery_grid_thumb3.jpg" class="item fancy_img">
-										<img data-src="images/tmp/gallery_grid_thumb3.jpg" alt="" class="lazyload">
-									</a>
+									<td class="articul">
+										<a href="/" target="_blank">RSM1W36S40</a>
+									</td>
 
-									<a href="images/tmp/gallery_grid_thumb4.jpg" class="item fancy_img last">
-										<img data-src="images/tmp/gallery_grid_thumb4.jpg" alt="" class="lazyload">
-									</a>
-								</div>
-							</div>
+									<td class="price" data-column="Цена (₽)">14 000.00</td>
 
-							<div class="narrowly">
-								<p>«Новосибирская торгово-промышленной палата» выдала положительный акт экспертизы № 016-00-00210, который подтверждает, что промышленная продукция:</p>
+									<td class="amount" data-column="Количество">
+										<div>
+											<button type="button" class="btn plus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
+											</button>
 
-								<div class="cols">
-									<div class="col">
-										<ul>
-											<li>SFP модуль RSM1D3L2;</li>
-											<li>SFP модуль RSM1W63S3;</li>
-											<li>SFP модуль RSM1W36S20;</li>
-											<li>SFP модуль RSM1W36L3;</li>
-											<li>SFP модуль RSM1W36L20;</li>
-										</ul>
-									</div>
+											<input type="text" value="1" class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
 
-									<div class="col">
-										<ul>
-											<li>SFP модуль RSM1D3L2;</li>
-											<li>SFP модуль RSM1W63S3;</li>
-											<li>SFP модуль RSM1W36S20;</li>
-											<li>SFP модуль RSM1W36L3;</li>
-											<li>SFP модуль RSM1W36L20;</li>
-										</ul>
-									</div>
-								</div>
+											<button type="button" class="btn minus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
+											</button>
+										</div>
+									</td>
 
-								<p>Выпускаемая ОБЩЕСТВОМ С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «НПП РУСМОДУЛЬ» (ООО «НПП РУСМОДУЛЬ»), соответствует требованиям, предусмотренным постановлением Правительства РФ от 17 июля 2015 г. №719 и является произведённой в Российской Федерации.</p>
-							</div>
+									<td class="price total" data-column="Итого (₽)">70 000.00</td>
+
+									<td class="delete">
+										<button class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="thumb">
+										<a href="/" target="_blank">
+											<img data-src="images/tmp/product_thumb3.png" alt="" class="lazyload">
+										</a>
+									</td>
+
+									<td class="articul">
+										<a href="/" target="_blank">RSM1W36S40</a>
+									</td>
+
+									<td class="price" data-column="Цена (₽)">14 000.00</td>
+
+									<td class="amount" data-column="Количество">
+										<div>
+											<button type="button" class="btn plus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
+											</button>
+
+											<input type="text" value="1" class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+											<button type="button" class="btn minus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
+											</button>
+										</div>
+									</td>
+
+									<td class="price total" data-column="Итого (₽)">70 000.00</td>
+
+									<td class="delete">
+										<button class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="thumb">
+										<a href="/" target="_blank">
+											<img data-src="images/tmp/product_thumb3.png" alt="" class="lazyload">
+										</a>
+									</td>
+
+									<td class="articul">
+										<a href="/" target="_blank">RSM1W36S40</a>
+									</td>
+
+									<td class="price" data-column="Цена (₽)">14 000.00</td>
+
+									<td class="amount" data-column="Количество">
+										<div>
+											<button type="button" class="btn plus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
+											</button>
+
+											<input type="text" value="1" class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+											<button type="button" class="btn minus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
+											</button>
+										</div>
+									</td>
+
+									<td class="price total" data-column="Итого (₽)">70 000.00</td>
+
+									<td class="delete">
+										<button class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="thumb">
+										<a href="/" target="_blank">
+											<img data-src="images/tmp/product_thumb3.png" alt="" class="lazyload">
+										</a>
+									</td>
+
+									<td class="articul">
+										<a href="/" target="_blank">RSM1W36S40</a>
+									</td>
+
+									<td class="price" data-column="Цена (₽)">14 000.00</td>
+
+									<td class="amount" data-column="Количество">
+										<div>
+											<button type="button" class="btn plus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus"></use></svg>
+											</button>
+
+											<input type="text" value="1" class="input"
+											  data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+
+											<button type="button" class="btn minus">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_minus"></use></svg>
+											</button>
+										</div>
+									</td>
+
+									<td class="price total" data-column="Итого (₽)">70 000.00</td>
+
+									<td class="delete">
+										<button class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="cart_total">
+							<div class="label">Общая сумма (₽):</div>
+
+							<div class="price">1 980 000.00</div>
+
+							<div class="exp">(Стоимость с учетом НДС)</div>
 						</div>
+					</div>
+				</section>
+
+
+				<section class="checkout_info block">
+					<div class="cont big_w">
+						<div class="block_head">
+							<div class="title">Оформить заказ</div>
+						</div>
+
+						<form action="" class="form">
+							<div class="columns row">
+								<div class="line">
+									<div class="label">Ф.И.О.*</div>
+
+									<div class="field">
+										<input type="text" name="" value="" class="input" placeholder="Например, Евгений">
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="label">E-mail*</div>
+
+									<div class="field">
+										<input type="email" name="" value="" class="input" placeholder="Например, exemple@email.com">
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="label">Номер телефона*</div>
+
+									<div class="field">
+										<input type="tel" name="" value="" class="input" placeholder="Введите номер телефона">
+									</div>
+								</div>
+
+								<div class="line">
+									<div class="label">Компания*</div>
+
+									<div class="field">
+										<input type="text" name="" value="" class="input" placeholder="Например, ООО ”Альфа”">
+									</div>
+								</div>
+							</div>
+
+							<div class="line">
+								<div class="label">Комментарий</div>
+
+								<div class="field">
+									<textarea name="" placeholder="Необязательно"></textarea>
+								</div>
+							</div>
+
+							<div class="line exp">* -  Поля обязательные к заполнению</div>
+
+							<div class="line agree">
+								<div class="field">
+									<label>
+										<input type="checkbox" name="">
+
+										<div class="check">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+										</div>
+
+										<div>Я ознакомлен(а) и согласен(-а) с <a href="/" target="_blank">Политикой конфиденциальности</a></div>
+									</label>
+								</div>
+							</div>
+
+							<div class="submit">
+								<button type="submit" class="submit_btn">Оформить заказ</button>
+							</div>
+						</form>
 					</div>
 				</section>
 			</div>

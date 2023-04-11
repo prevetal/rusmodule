@@ -143,6 +143,17 @@
 
 
 
+    /*--------------
+        Products
+    --------------*/
+    .products table td
+    {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+
     /*-----------
         PopUp
     -----------*/

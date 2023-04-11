@@ -66,7 +66,7 @@
 
     header .catalog
     {
-        width: 272px;
+        width: 260px;
     }
 
 
@@ -84,13 +84,13 @@
 
     header .mob_search
     {
-        width: calc(100% - 243px);
+        width: calc(100% - 372px);
     }
 
 
     header .search
     {
-        width: calc(100% - 280px);
+        width: calc(100% - 268px);
     }
 
     header .search .tip

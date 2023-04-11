@@ -83,6 +83,11 @@
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
 							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
 						</button>
+
+						<button class="mob_search_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+						</button>
 					</div>
 
 					<div class="line"></div>
@@ -158,11 +163,6 @@
 								</a></div>
 							</div>
 						</div>
-
-						<button class="mob_search_btn">
-							<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
-							<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
-						</button>
 
 						<div class="mob_search">
 							<div class="title">Найти</div>
@@ -287,6 +287,15 @@
 						</div>
 
 						<button class="get_prices_btn modal_btn" data-modal="#get_prices_modal">Запросить прайс-лист</button>
+
+						<a href="/" class="cart_link">
+							<div class="icon">
+								<svg><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+								<span>4</span>
+							</div>
+
+							<div>Корзина</div>
+						</a>
 					</div>
 				</header>
 
@@ -1053,6 +1062,7 @@
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
 												</th>
+
 												<th>
 													<span>Разъем</span>
 
@@ -1060,6 +1070,7 @@
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
 												</th>
+
 												<th>
 													<span>Скорость</span>
 
@@ -1067,6 +1078,7 @@
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
 												</th>
+
 												<th>
 													<span>Расстояние</span>
 
@@ -1074,6 +1086,7 @@
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
 												</th>
+
 												<th>
 													<span>TX</span>
 
@@ -1081,6 +1094,7 @@
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
 												</th>
+
 												<th>
 													<span>RX</span>
 
@@ -1088,19 +1102,33 @@
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
 												</th>
+
 												<th>
-													<span>Кол-во ОВ<br> / Медь</span>
+													<span>Среда<br> передачи</span>
 
 													<button class="sort_btn">
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
 												</th>
+
 												<th>
-													<span>Цена</span>
+													<span>Тип кабеля</span>
 
 													<button class="sort_btn">
 														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
 													</button>
+												</th>
+
+												<th>
+													<span>Цена GPL</span>
+
+													<button class="sort_btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+													</button>
+												</th>
+
+												<th>
+													<span>Добавить в<br> корзину</span>
 												</th>
 											</tr>
 										</thead>
@@ -1116,8 +1144,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1130,8 +1166,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1144,8 +1188,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1158,8 +1210,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1172,8 +1232,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1186,8 +1254,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1200,8 +1276,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1214,8 +1298,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1228,8 +1320,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
+
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
+												</td>
 											</tr>
 
 											<tr>
@@ -1242,288 +1342,16 @@
 												<td class="distance" data-column="Расстояние">40 км</td>
 												<td class="tx" data-column="TX">1310 нм</td>
 												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
+												<td class="gear" data-column="Среда передачи">1</td>
+												<td class="cable_type" data-column="Тип кабеля">Одномодовый</td>
+												<td class="price" data-column="Цена GPL">139 776.00 ₽</td>
 
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
+												<td class="buy">
+													<button class="btn">
+														<svg class="icon"><use xlink:href="images/sprite.svg#ic_plus2"></use></svg>
+														<span>В корзину</span>
+													</button>
 												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
-											</tr>
-
-											<tr>
-												<td class="name" data-column="">
-													<a href="/">RSM1W36S40</a>
-												</td>
-
-												<td class="connector" data-column="Разъем">SC</td>
-												<td class="speed" data-column="Скорость">1 Гбит/c</td>
-												<td class="distance" data-column="Расстояние">40 км</td>
-												<td class="tx" data-column="TX">1310 нм</td>
-												<td class="rx" data-column="RX">1550 нм</td>
-												<td class="amount" data-column="Кол-во ОВ / Медь">1</td>
-												<td class="price">14 000.00 ₽</td>
 											</tr>
 										</tbody>
 									</table>
